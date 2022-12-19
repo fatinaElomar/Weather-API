@@ -19,7 +19,172 @@
 /*  Search bar */
 
 /* Current weather */
+@font-face {
+  font-family: Raleway;
+  src: local("https://fonts.googleapis.com/css?family=Raleway&display=swap")
+}
+
+body {
+  margin: 0px;
+}
 
 div {
-  border: 5px solid red;
+  background-color: rgba(156, 206, 244, 255);
+}
+
+header {
+  background-color: rgba(117, 158, 218, 255);
+  height: 80px;
+  display: flex;
+  font-family: Raleway;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+
+.input_city {
+  border: none;
+  background-color: transparent;
+  width: 140px;
+  height: 32px;
+  font-family: Raleway;
+  padding-left: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(132, 130, 130, 0.899);
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.btn {
+
+  font-family: Raleway;
+  background-color: #5879c7;
+  border: none;
+  margin-left: 15px;
+  width: 120px;
+  height: 35px;
+}
+
+.center {
+  width: 235px;
+}
+
+.app__main {
+  text-align: center;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.info {
+  display: relative;
+  left: 55px;
+}
+
+.weather-bot {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  justify-content: center;
+  font-family: Raleway;
+  color: #1c256d;
+  align-items: center;
+}
+
+.weather-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.temp {
+  color: white;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.temperature {
+  font-weight: bold;
+  font-family: Raleway;
+  color: #1c256d;
+}
+
+.humidity {
+  font-weight: bold;
+  font-family: Raleway;
+  color: #1c256d;
+}
+
+.pressure {
+  font-weight: bold;
+  font-family: Raleway;
+  color: #1c256d;
+}
+
+.temper {
+  font-family: Raleway;
+  color: #1c256d;
+}
+
+.tempers {
+  font-family: Raleway;
+  color: #1c256d;
+}
+
+.temperature {
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+@media screen and (max-width: 990px) {
+  .weather-bot {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 45px;
+    padding-bottom: 20px;
+
+  }
+
+  .btn {
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  .detail {
+    border-bottom: 1px solid rgb(129, 122, 122);
+    border-top: 1px solid rgb(129, 122, 122);
+    margin: 30px;
+
+  }
+
+  header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
